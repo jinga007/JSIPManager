@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OPTIONS>
+  <OPTION Id="100">
+    <NAME>GENERAL</NAME>
+    <LOAD_NIC>Y</LOAD_NIC>
+    <LOAD_IPLIST>Y</LOAD_IPLIST>
+    <SAVE_IPLIST>Y</SAVE_IPLIST>
+  </OPTION>
+</OPTIONS>

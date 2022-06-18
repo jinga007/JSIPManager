@@ -1,0 +1,45 @@
+﻿<Window x:Class="JSIPManager.Windows.OptionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JSIPManager.Windows"
+        mc:Ignorable="d"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="나눔고딕"
+        Title="OPTION" Height="400" Width="350">
+    <Grid>
+        <TabControl TabStripPlacement="Left" Margin="0,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <TabItem Header="General">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <CheckBox x:Name="chkLoadNic" Grid.Row="1" Grid.Column="1" Content="Auto load Nic Informantion[On form load]" IsChecked="True" />
+                    <CheckBox x:Name="chkLoadIPList" Grid.Row="3" Grid.Column="1" Content="Auto load IP list informantion[On form load]" IsChecked="True" />
+                    <CheckBox x:Name="chkSaveIPList" Grid.Row="5" Grid.Column="1" Content="Auto save IP list[On  form Close]" IsChecked="True" />
+                    <Button x:Name="btnSaveSet" Grid.Row="10" Grid.Column="1" Width="60" HorizontalAlignment="Right" Content="Save" Click="btnSaveSet_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
