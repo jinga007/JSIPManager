@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\jinga007\source\repos\JSIPManager\JSIPManager\obj\Release\
+C:\Users\jinga\source\repos\JSIPManagerVer1.1.2\JSIPManager\JSIPManager\obj\Release\
 JSIPManager
 none
 false
 TRACE
-C:\Users\jinga007\source\repos\JSIPManager\JSIPManager\App.xaml
+C:\Users\jinga\source\repos\JSIPManagerVer1.1.2\JSIPManager\JSIPManager\App.xaml
 512501086
 
 131377271156
-16759723499
+16225522781
 MainWindow.xaml;Windows\OptionWindow.xaml;Windows\PingTestWindow.xaml;Windows\PortScanWindow.xaml;Windows\VersionWindow.xaml;
 
 False

@@ -56,7 +56,7 @@
                     </MenuItem>
                     
                     <Separator />
-                    <MenuItem Header="_Minimum" Click="MainMenuItem_Click" Visibility="Hidden" >
+                    <MenuItem Header="_Minimum" Click="MainMenuItem_Click" Visibility="Visible" >
                         <MenuItem.Icon>
                             <Image Source="Icon/Minimum.png"/>
                         </MenuItem.Icon>

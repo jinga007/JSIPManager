@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="Port Scan" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="66*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="15*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="IP Address : " Grid.Column="0" Grid.Row="0" />
+        <TextBox x:Name="txtIPAddress" Grid.Column="1" Grid.Row="0" Text="192.168.10.19,......." HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,2,0" />
+        <Label Content="Port : " Grid.Column="0" Grid.Row="1" />
+        <TextBox x:Name="txtPort" Grid.Column="1" Grid.Row="1" Text="8080,.........." HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="0,0,2,0"  />
+        <Button  x:Name="btnPortScanStart" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Content="Port Scan Start" Click="btnPortScanStart_Click"/>
+        <Button  x:Name="btnPortScanStop" Grid.Column="3" Grid.Row="0" Grid.RowSpan="2" Content="Port Scan Stop" Click="btnPortScanStop_Click"/>
+        <!--<TextBox x:Name="txtPortScanStatus" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4" Text="Port Status..." VerticalScrollBarVisibility="Auto"/>-->
+
+        <RichTextBox x:Name="txtPortScanStatus" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4"  VerticalScrollBarVisibility="Auto" Background="Black" Foreground="YellowGreen" >
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0" />
+                </Style>
+            </RichTextBox.Resources>
+        </RichTextBox>
     </Grid>
 </Window>
